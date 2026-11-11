@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "customConditions": [
+      "browser"
+    ],
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "types": []
+  },
+  "include": [
+    "src/ui/**/*.ts"
+  ],
+  "exclude": []
+}

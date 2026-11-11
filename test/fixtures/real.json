@@ -1,0 +1,734 @@
+{
+ "/sequence/json": {
+  "Response": [
+   {
+    "GlobalTriggers": []
+   },
+   {
+    "Status": "RUNNING",
+    "Conditions": [],
+    "Triggers": [],
+    "Name": "Start_Container",
+    "Items": [
+     {
+      "CompletedIterations": 0,
+      "Filter": "Current",
+      "DitherProgressExposures": 0,
+      "Name": "Smart Exposure",
+      "DitherTargetExposures": 1,
+      "Status": "RUNNING",
+      "Iterations": 50,
+      "Offset": -1,
+      "ExposureTime": 60,
+      "ExposureCount": 0,
+      "Gain": -1,
+      "Binning": {
+       "Name": "1x1",
+       "X": 1,
+       "Y": 1
+      },
+      "Type": "LIGHT"
+     }
+    ]
+   },
+   {
+    "Status": "CREATED",
+    "Conditions": [],
+    "Triggers": [],
+    "Name": "Targets_Container",
+    "Items": [
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 1_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 2_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 3_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 4_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 5_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 6_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 7_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 8_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 9_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 10_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 11_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 12_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 13_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 14_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 15_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 16_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 17_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 18_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 19_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 20_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 21_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 22_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 23_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 24_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 25_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 26_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 27_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 28_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 29_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 30_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 31_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 32_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 33_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 34_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 35_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 36_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 37_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 38_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 39_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 40_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 41_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 42_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 43_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 44_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 45_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 46_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 47_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 48_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 49_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 50_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 51_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 52_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 53_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 54_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 55_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 56_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 57_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 58_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 59_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 60_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 61_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 62_Container",
+      "Items": []
+     },
+     {
+      "Status": "CREATED",
+      "Conditions": [],
+      "Triggers": [],
+      "Name": "M 42 Panel 63_Container",
+      "Items": []
+     }
+    ]
+   },
+   {
+    "Status": "CREATED",
+    "Conditions": [],
+    "Triggers": [],
+    "Name": "End_Container",
+    "Items": []
+   }
+  ],
+  "Error": "",
+  "StatusCode": 200,
+  "Success": true,
+  "Type": "API"
+ },
+ "/equipment/guider/graph": {
+  "Response": {
+   "RMS": {
+    "RA": 0,
+    "Dec": 0,
+    "Total": 0,
+    "RAText": "RA: 0.00 (0.00\")",
+    "DecText": "Dec: 0.00 (0.00\")",
+    "TotalText": "Tot: 0.00 (0.00\")",
+    "PeakRAText": "Peak RA: 0.00 (0.00\")",
+    "PeakDecText": "Peak Dec: 0.00 (0.00\")",
+    "Scale": 0,
+    "PeakRA": 0,
+    "PeakDec": 0,
+    "DataPoints": 0
+   },
+   "ChangeId": 2,
+   "Interval": 1,
+   "MaxY": 4,
+   "MinY": -4,
+   "MaxDurationY": 1,
+   "MinDurationY": -1,
+   "GuideSteps": [],
+   "HistorySize": 100,
+   "PixelScale": 0,
+   "Scale": "PIXELS"
+  },
+  "Error": "",
+  "StatusCode": 200,
+  "Success": true,
+  "Type": "API"
+ },
+ "/equipment/camera/info": {
+  "Response": {
+   "TargetTemp": 0,
+   "AtTargetTemp": false,
+   "CanSetTemperature": false,
+   "HasShutter": false,
+   "Temperature": "NaN",
+   "Gain": 0,
+   "DefaultGain": 0,
+   "ElectronsPerADU": "NaN",
+   "BinX": 1,
+   "BitDepth": 16,
+   "BinY": 1,
+   "CanSetOffset": true,
+   "CanGetGain": true,
+   "OffsetMin": 0,
+   "OffsetMax": 1000,
+   "Offset": 10,
+   "DefaultOffset": 10,
+   "USBLimit": 100,
+   "IsSubSampleEnabled": false,
+   "CameraState": "NoState",
+   "XSize": 640,
+   "YSize": 480,
+   "PixelSize": 3.8,
+   "HasBattery": false,
+   "Battery": -1,
+   "GainMin": 0,
+   "GainMax": 10000,
+   "CanSetGain": true,
+   "Gains": [],
+   "CoolerOn": false,
+   "CoolerPower": "NaN",
+   "HasDewHeater": true,
+   "DewHeaterOn": false,
+   "CanSubSample": true,
+   "SubSampleX": 0,
+   "SubSampleY": 0,
+   "SubSampleWidth": 0,
+   "SubSampleHeight": 0,
+   "TemperatureSetPoint": "NaN",
+   "ReadoutModes": [
+    "Default"
+   ],
+   "ReadoutMode": 0,
+   "ReadoutModeForSnapImages": 0,
+   "ReadoutModeForNormalImages": 0,
+   "IsExposing": true,
+   "ExposureEndTime": "2026-11-10T19:26:39.9181085-07:00",
+   "LastDownloadTime": -1,
+   "SensorType": "Monochrome",
+   "BayerOffsetX": 0,
+   "BayerOffsetY": 0,
+   "BinningModes": [
+    {
+     "Name": "1x1",
+     "X": 1,
+     "Y": 1
+    }
+   ],
+   "ExposureMax": 1.7976931348623157e+308,
+   "ExposureMin": 0,
+   "LiveViewEnabled": false,
+   "CanShowLiveView": true,
+   "SupportedActions": [],
+   "CanSetUSBLimit": true,
+   "USBLimitMin": 0,
+   "USBLimitMax": 100,
+   "Connected": true,
+   "Name": "N.I.N.A. Simulator Camera",
+   "DisplayName": "N.I.N.A. Simulator Camera",
+   "DeviceId": "4C0BBF74-0D95-41F6-AAD8-D6D58668CF2C"
+  },
+  "Error": "",
+  "StatusCode": 200,
+  "Success": true,
+  "Type": "API"
+ },
+ "/equipment/mount/info": {
+  "Response": {
+   "TrackingMode": "Stopped",
+   "SiderealTime": 22.309017212332005,
+   "RightAscension": 22.3089573195961,
+   "Declination": -13.069271840140583,
+   "SiteLatitude": 33.737500000000004,
+   "SiteLongitude": -112.09805555555555,
+   "SiteElevation": 1560,
+   "RightAscensionString": "22:18:32",
+   "DeclinationString": "-13\u00b0 04' 09\"",
+   "Coordinates": {
+    "RA": 22.3089573195961,
+    "RAString": "22:18:32",
+    "RADegrees": 334.6343597939415,
+    "Dec": -13.069271840140583,
+    "DecString": "-13\u00b0 04' 09\"",
+    "Epoch": "JNOW",
+    "DateTime": {
+     "Now": "2026-11-10T19:25:54.8921581-07:00",
+     "UtcNow": "2026-11-11T02:25:54.8922209Z"
+    }
+   },
+   "TimeToMeridianFlip": 24,
+   "SideOfPier": "pierUnknown",
+   "Altitude": 43.1932282447815,
+   "AltitudeString": "43\u00b0 11' 36\"",
+   "Azimuth": 180,
+   "AzimuthString": "180\u00b0 00' 00\"",
+   "SiderealTimeString": "22:18:32",
+   "HoursToMeridianString": "24:00:00",
+   "AtPark": true,
+   "TrackingRate": {},
+   "TrackingEnabled": false,
+   "TrackingModes": [
+    "Sidereal",
+    "Lunar",
+    "Solar",
+    "King",
+    "Custom",
+    "Stopped"
+   ],
+   "AtHome": false,
+   "CanFindHome": true,
+   "CanPark": true,
+   "CanSetPark": true,
+   "CanSetTrackingEnabled": true,
+   "CanSetDeclinationRate": true,
+   "CanSetRightAscensionRate": true,
+   "EquatorialSystem": "JNOW",
+   "HasUnknownEpoch": false,
+   "TimeToMeridianFlipString": "24:00:00",
+   "Slewing": false,
+   "GuideRateRightAscensionArcsecPerSec": 15.041068619585433,
+   "GuideRateDeclinationArcsecPerSec": 15.041068619585433,
+   "CanMovePrimaryAxis": true,
+   "CanMoveSecondaryAxis": true,
+   "PrimaryAxisRates": [
+    {}
+   ],
+   "SecondaryAxisRates": [
+    {}
+   ],
+   "SupportedActions": [],
+   "AlignmentMode": "Polar",
+   "CanPulseGuide": true,
+   "IsPulseGuiding": false,
+   "CanSetPierSide": false,
+   "CanSlew": true,
+   "CanSlewAltAz": true,
+   "UTCDate": "2026-11-11T02:25:54.478",
+   "Connected": true,
+   "Name": "Simulator",
+   "DisplayName": "Simulator (ASCOM)",
+   "DeviceId": "ScopeSim.Telescope"
+  },
+  "Error": "",
+  "StatusCode": 200,
+  "Success": true,
+  "Type": "API"
+ },
+ "/equipment/filterwheel/info": {
+  "Response": {
+   "Connected": true,
+   "Name": "Alpaca Filter Wheel Simulator",
+   "DisplayName": "Alpaca Filter Wheel Simulator (ASCOM)",
+   "Description": "Simulator description",
+   "DriverInfo": "ASCOM filter wheel driver simulator",
+   "DriverVersion": "0.4",
+   "DeviceId": "ASCOM.Simulator.FilterWheel",
+   "SupportedActions": [],
+   "IsMoving": false,
+   "SelectedFilter": {
+    "Name": "l",
+    "Id": 0
+   },
+   "AvailableFilters": [
+    {
+     "Name": "l",
+     "Id": 0
+    },
+    {
+     "Name": "R",
+     "Id": 1
+    },
+    {
+     "Name": "G",
+     "Id": 2
+    },
+    {
+     "Name": "B",
+     "Id": 3
+    },
+    {
+     "Name": "S",
+     "Id": 4
+    },
+    {
+     "Name": "H",
+     "Id": 5
+    }
+   ]
+  },
+  "Error": "",
+  "StatusCode": 200,
+  "Success": true,
+  "Type": "API"
+ }
+}

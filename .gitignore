@@ -1,0 +1,6 @@
+node_modules/
+dist/
+# build output (rebuilt by `npm run build`; ship via Releases)
+com.sirsnacks.ninadeck.sdPlugin/bin/
+com.sirsnacks.ninadeck.sdPlugin/ui/*.js
+com.sirsnacks.ninadeck.sdPlugin/logs/

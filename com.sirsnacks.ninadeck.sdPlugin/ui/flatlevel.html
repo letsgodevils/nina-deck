@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Flat Brightness</title>
+<style>
+	body { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; background: #2d2d2d; color: #d8d8d8; margin: 0; padding: 12px; }
+	label { display: block; margin-bottom: 6px; color: #9a9a9a; }
+	input { width: 100%; box-sizing: border-box; padding: 6px 8px; font-size: 13px; color: #e8e8e8; background: #3d3d3d; border: 1px solid #555; border-radius: 4px; }
+	.hint { margin-top: 10px; color: #9a9a9a; line-height: 1.4; }
+</style>
+</head>
+<body>
+	<label for="level">Brightness for this key (%)</label>
+	<input id="level" type="number" min="0" max="100" step="1" value="50" />
+	<div class="hint">Pressing the key sets the flat panel to this brightness. Add the action to several keys for different presets.<br />Refused while the light is on and the camera is exposing.</div>
+	<script src="flatlevel.js"></script>
+</body>
+</html>

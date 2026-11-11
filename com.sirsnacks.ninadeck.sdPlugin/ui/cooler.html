@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Sensor Cooling</title>
+<style>
+	body { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; background: #2d2d2d; color: #d8d8d8; margin: 0; padding: 12px; }
+	label { display: block; margin-bottom: 6px; color: #9a9a9a; }
+	input { width: 100%; box-sizing: border-box; padding: 6px 8px; font-size: 13px; color: #e8e8e8; background: #3d3d3d; border: 1px solid #555; border-radius: 4px; }
+	.hint { margin-top: 10px; color: #9a9a9a; line-height: 1.4; }
+</style>
+</head>
+<body>
+	<label for="temp">Target temperature (°C)</label>
+	<input id="temp" type="number" min="-60" max="40" step="0.5" value="-10" />
+	<div class="hint">Cooler off: tap the key to cool to this temperature.<br />Cooler on: hold the key for 1 second to warm up gradually (N.I.N.A.'s default warm-up).<br />While warming: hold 1 second to cancel.</div>
+	<script src="cooler.js"></script>
+</body>
+</html>

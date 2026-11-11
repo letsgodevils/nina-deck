@@ -1,0 +1,458 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "Name": "N.I.N.A. Deck",
+  "Version": "0.8.0.0",
+  "Author": "SirSnacks",
+  "Description": "Live N.I.N.A. status (exposure, guiding, target) and sequence control via the Advanced API plugin.",
+  "UUID": "com.sirsnacks.ninadeck",
+  "Icon": "imgs/plugin-icon",
+  "Category": "N.I.N.A. Deck",
+  "CategoryIcon": "imgs/category-icon",
+  "CodePath": "bin/plugin.js",
+  "SDKVersion": 2,
+  "Nodejs": {
+    "Version": "20",
+    "Debug": "enabled"
+  },
+  "Software": {
+    "MinimumVersion": "6.9"
+  },
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    },
+    {
+      "Platform": "mac",
+      "MinimumVersion": "12"
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Exposure Countdown",
+      "UUID": "com.sirsnacks.ninadeck.exposure",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Time remaining in the current exposure",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Frame Count",
+      "UUID": "com.sirsnacks.ninadeck.frames",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Frames done / total plus filter",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Target",
+      "UUID": "com.sirsnacks.ninadeck.target",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Current (or next) target name",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Guiding RMS",
+      "UUID": "com.sirsnacks.ninadeck.guiding",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "PHD2 RMS in arcseconds, color-coded",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Sensor Temp",
+      "UUID": "com.sirsnacks.ninadeck.camera",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Camera temperature and cooler power",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Sensor Cooling",
+      "UUID": "com.sirsnacks.ninadeck.cooler",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Tap to cool to the target temperature; hold 1 second to warm up",
+      "Controllers": [
+        "Keypad"
+      ],
+      "PropertyInspectorPath": "ui/cooler.html",
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Meridian Flip",
+      "UUID": "com.sirsnacks.ninadeck.mount",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Time until meridian flip and altitude",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Park Mount",
+      "UUID": "com.sirsnacks.ninadeck.park",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Hold 1 second to park the mount; tap to unpark when parked",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Home Mount",
+      "UUID": "com.sirsnacks.ninadeck.home",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Hold 1 second to send the mount to its home position",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Focus Position",
+      "UUID": "com.sirsnacks.ninadeck.focus",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Current focuser position and temperature",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Focus In",
+      "UUID": "com.sirsnacks.ninadeck.focus-in",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Move the focuser in by the step size set in this key's settings",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ],
+      "PropertyInspectorPath": "ui/focus.html"
+    },
+    {
+      "Name": "Focus Out",
+      "UUID": "com.sirsnacks.ninadeck.focus-out",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Move the focuser out by the step size set in this key's settings",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ],
+      "PropertyInspectorPath": "ui/focus.html"
+    },
+    {
+      "Name": "Autofocus",
+      "UUID": "com.sirsnacks.ninadeck.autofocus",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Hold 1 second to start autofocus; hold again to cancel while it runs",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Flat Light",
+      "UUID": "com.sirsnacks.ninadeck.flat-light",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Tap to turn the flat panel light on or off (on is refused while exposing)",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Flat Cover",
+      "UUID": "com.sirsnacks.ninadeck.flat-cover",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Hold 1 second to open or close the flat panel cover",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Flat Brightness",
+      "UUID": "com.sirsnacks.ninadeck.flat-level",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Tap to set the flat panel to this key's brightness preset",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ],
+      "PropertyInspectorPath": "ui/flatlevel.html"
+    },
+    {
+      "Name": "Switch",
+      "UUID": "com.sirsnacks.ninadeck.switch",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Control a switch: tap to turn on, hold 1 second to turn off (pick the switch in settings)",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ],
+      "PropertyInspectorPath": "ui/switch.html"
+    },
+    {
+      "Name": "Connections",
+      "UUID": "com.sirsnacks.ninadeck.status",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "N.I.N.A., camera, mount, guider status",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Start Sequence",
+      "UUID": "com.sirsnacks.ninadeck.start",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Start the loaded sequence",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Stop Sequence",
+      "UUID": "com.sirsnacks.ninadeck.stop",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Hold 1 second to stop the sequence",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Current Filter",
+      "UUID": "com.sirsnacks.ninadeck.filter",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Shows the filter currently in the beam",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Select Filter",
+      "UUID": "com.sirsnacks.ninadeck.filterselect",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Change to a filter you pick in this key's settings",
+      "Controllers": [
+        "Keypad"
+      ],
+      "PropertyInspectorPath": "ui/filter.html",
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Tracking Rate",
+      "UUID": "com.sirsnacks.ninadeck.tracking",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Current tracking mode and rate",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Track: Sidereal",
+      "UUID": "com.sirsnacks.ninadeck.trk-sidereal",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Set mount tracking to sidereal",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Track: Lunar",
+      "UUID": "com.sirsnacks.ninadeck.trk-lunar",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Set mount tracking to lunar",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Track: Solar",
+      "UUID": "com.sirsnacks.ninadeck.trk-solar",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Set mount tracking to solar",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Track: King",
+      "UUID": "com.sirsnacks.ninadeck.trk-king",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Set mount tracking to king",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Track: Stop",
+      "UUID": "com.sirsnacks.ninadeck.trk-stopped",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Hold 1 second to stop mount tracking",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/key",
+          "ShowTitle": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+ "flat": {
+  "Response": {
+   "CoverState": "Closed",
+   "LocalizedCoverState": "Closed",
+   "LocalizedLightOnState": "Off",
+   "LightOn": false,
+   "Brightness": 0,
+   "SupportsOpenClose": true,
+   "MinBrightness": 0,
+   "MaxBrightness": 100,
+   "SupportsOnOff": true,
+   "SupportedActions": [],
+   "Connected": true,
+   "Name": "Alpaca Cover Calibrator Simulator",
+   "DisplayName": "Alpaca Cover Calibrator Simulator (ASCOM)",
+   "Description": "Alpaca CoverCalibrator Simulator",
+   "DriverInfo": "CoverCalibrator driver version: 0.4.1.0.",
+   "DriverVersion": "0.4",
+   "DeviceId": "ASCOM.Simulator.CoverCalibrator"
+  },
+  "Error": "",
+  "StatusCode": 200,
+  "Success": true,
+  "Type": "API"
+ },
+ "switch": {
+  "Response": {
+   "WritableSwitches": [
+    {
+     "Maximum": 1,
+     "Minimum": 0,
+     "StepSize": 1,
+     "TargetValue": 0,
+     "Id": 0,
+     "Name": "Asynchronous switch",
+     "Description": "Asynchronous switch",
+     "Value": 0
+    },
+    {
+     "Maximum": 1,
+     "Minimum": 0,
+     "StepSize": 1,
+     "TargetValue": 0,
+     "Id": 1,
+     "Name": "Generic Power switch",
+     "Description": "Generic Power switch",
+     "Value": 0
+    },
+    {
+     "Maximum": 100,
+     "Minimum": 0,
+     "StepSize": 10,
+     "TargetValue": 0,
+     "Id": 2,
+     "Name": "Light box , 0 to 100%",
+     "Description": "Light box , 0 to 100%",
+     "Value": 0
+    },
+    {
+     "Maximum": 255,
+     "Minimum": 0,
+     "StepSize": 1,
+     "TargetValue": 0,
+     "Id": 3,
+     "Name": "Flat panel , 0 to 255",
+     "Description": "Flat panel , 0 to 255",
+     "Value": 0
+    }
+   ],
+   "ReadonlySwitches": [
+    {
+     "Id": 4,
+     "Name": "Scope cover switch.",
+     "Description": "Scope cover switch.",
+     "Value": 0
+    },
+    {
+     "Id": 5,
+     "Name": "Scope parked switch.",
+     "Description": "Scope parked switch.",
+     "Value": 0
+    },
+    {
+     "Id": 6,
+     "Name": "Cloud cover (okta)",
+     "Description": "Cloud cover (okta)",
+     "Value": 0
+    },
+    {
+     "Id": 7,
+     "Name": "Temperature in deg C",
+     "Description": "Temperature in deg C",
+     "Value": 12
+    },
+    {
+     "Id": 8,
+     "Name": "Relative humidity %",
+     "Description": "Relative humidity %",
+     "Value": 50
+    },
+    {
+     "Id": 9,
+     "Name": "Rain monitor, true if raining",
+     "Description": "Rain monitor, true if raining",
+     "Value": 0
+    }
+   ],
+   "SupportedActions": [
+    "OCHTag",
+    "OCHTestPowerReport"
+   ],
+   "Connected": true,
+   "Name": "Alpaca Switch Simulator",
+   "DisplayName": "Alpaca Switch Simulator (ASCOM)",
+   "Description": "ASCOM SwitchV2 Simulator Driver.",
+   "DriverInfo": "Switch V2 Simulator, version: 0.4.1.0",
+   "DriverVersion": "0.4",
+   "DeviceId": "ASCOM.Simulator.Switch"
+  },
+  "Error": "",
+  "StatusCode": 200,
+  "Success": true,
+  "Type": "API"
+ }
+}

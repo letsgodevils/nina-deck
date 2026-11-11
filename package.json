@@ -1,0 +1,27 @@
+{
+  "name": "nina-deck",
+  "version": "0.8.0",
+  "description": "Stream Deck plugin for N.I.N.A.: live status keys and safe one-press controls",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w --watch.onEnd=\"streamdeck restart com.sirsnacks.ninadeck\"",
+    "test": "tsx test/run.ts && tsx test/pi.ts && tsx test/pi-cooler.ts && tsx test/pi-focus.ts && tsx test/pi-flatlevel.ts && tsx test/pi-switch.ts && tsx test/manifest.ts"
+  },
+  "dependencies": {
+    "@elgato/streamdeck": "^1.4.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.0",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^22.0.0",
+    "jsdom": "^31.0.0",
+    "rollup": "^4.0.0",
+    "tslib": "^2.6.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.5.0"
+  }
+}

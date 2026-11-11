@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Focus move</title>
+<style>
+	body { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; background: #2d2d2d; color: #d8d8d8; margin: 0; padding: 12px; }
+	label { display: block; margin-bottom: 6px; color: #9a9a9a; }
+	input { width: 100%; box-sizing: border-box; padding: 6px 8px; font-size: 13px; color: #e8e8e8; background: #3d3d3d; border: 1px solid #555; border-radius: 4px; }
+	.hint { margin-top: 10px; color: #9a9a9a; line-height: 1.4; }
+</style>
+</head>
+<body>
+	<label for="steps">Step size (focuser steps)</label>
+	<input id="steps" type="number" min="1" max="100000" step="1" value="100" />
+	<div class="hint">Each press moves the focuser this many steps from its current position (In = lower position, Out = higher).<br />Refused while the camera is exposing or autofocus is running.</div>
+	<script src="focus.js"></script>
+</body>
+</html>
