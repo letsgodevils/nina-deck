@@ -134,4 +134,4 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
-<!-- Add a LICENSE file and name it here before publishing, e.g. "MIT — see LICENSE". -->
+[MIT](LICENSE) © 2026 SirSnacks

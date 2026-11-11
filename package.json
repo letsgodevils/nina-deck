@@ -1,6 +1,7 @@
 {
   "name": "nina-deck",
   "version": "0.8.0",
+  "license": "MIT",
   "description": "Stream Deck plugin for N.I.N.A.: live status keys and safe one-press controls",
   "type": "module",
   "scripts": {
